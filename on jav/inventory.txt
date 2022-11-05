@@ -1,0 +1,134 @@
+1. hết chỗ ngồi
+2. hết vé
+3. hết tồn kho
+4. 
+
+- chỗ ngồi
+- mặc định 5 vé 1 lần
+- stock
+- min/max của vé
+
+---
+1. stock
+- còn stock ( mã giá có 1 NCCSP), còn chỗ ngồi, còn vé, còn min/max DONE
+- còn stock ( mã giá có 3 NCCSP), còn chỗ ngồi, còn vé, còn min/max DONE
+- còn stock ( 2 đối tượng vé, 2 mã giá còn stock), còn chỗ ngồi, còn vé, còn min/max. DONE
+- còn stock ( 1 đối tượng vé với 1 mã giá còn stock và 1 đối tượng vé với 1 mã giá hết stock), còn chỗ ngồi, còn vé, còn min/max HẾT VÉ
+- còn stock, hết chỗ ngồi, còn vé, còn min/max DONE
+- còn stock, còn chỗ ngồi, hết vé, còn min/max K THOẢ
+- còn stock, còn chỗ ngồi, còn vé, không đủ min/max CHƯA
+- hết stock, còn chỗ ngồi, còn vé, còn min/max
+- hết stock ( mã giá có 1 NCCSP Có stock, 1 NCCSP không Có stock), còn chỗ ngồi, còn vé, còn min/max
+- không đủ stock, còn chỗ ngồi, còn vé, còn min/max
+- 1 mã giá còn stock cho , còn chỗ ngồi, còn vé, còn min/max
+
+2.tỉ lệ
+- mã giá có 1 sp: còn, hết, còn nhưng k đủ
+- mã giá có 2 sp: còn và hết
+- mã giá có 3 sp của 1 loại: còn, còn và k đủ
+- mã giá có 3 sp của 1 loại: còn, hết và k đủ
+- mã giá có 3sp của 3 loại: còn, còn, còn
+- mã giá có 3sp của 3 loại: còn, còn và k đủ
+- mã giá có 3sp của 3 loại: còn, còn và  hết
+- mã giá có 3sp của 3 loại: còn, hết và còn
+
+3. giỏ hàng
+4. giỏ hàng có sẳn và hết vé v
+5. giỏ hàng có sẳn và mua thêm v
+6. add cart và thêm vào giỏ hàng
+7. 2 ng thanh toán cùng lúc
+8. stock ngày khác v
+9. stock ở ngày quá khứ
+10. tỉ lệ vượt quá stock v
+11. đã hết hạn
+12. số có thể thay đổi > đổi số lơn shonw / nhỏ hơn > book số vượt quá
+
+--- admin LSD SPNCC
+1v. Nhiều lô hàng > mua stock 1 lô, 2 lô, 3 lô
+2v. Đã ban, hết hạn, tăng số lượng, giảm số lượng,  THÊM NHIỀU , GIẢM NHIỀU
+4v. 11 lô hàng
+5. SỐ LƯỢNG NHIỀU
+6v. QUÁ KHỨ'
+7v. Tương lai nhiều tháng 
+8v. Lô hàng quá khứ, hiện tại, tương lai
+9v. K có lô hàng nào
+10. 1 mã có 1 spacc, tỉ lệ xuất kho = 1
+1 man có 2 spacc, tỉ lệ xuất kho = 2
+1 mã có 1 sp lập lịch, 1 sp k lập lịch
+
+
+-- hết vé
+1. Giữ vé
+2. Edit kho
+3. Ít nhất, nhiều nhà, bội số, stock
+
+-----
+Website
+
+- add giỏ hàng thành công > admin giảm stock DONE (TRÙNG)
+- add giỏ hàng/mua ngày thành công DONE (TRÙNG)
+- đang mua - chạy crojob clear kho
+- 
+
+1. Giữ vé định ngày ( ngày khác k thay đổi) DONE
+1.1 giữ vé k định ngày ( ngày khác k book được) DONE
+1.2 giữ vé nhiều ngày DONE
+
+
+2. Giỏ hàng có sản và mua thêm ở ngày khác TRÙNG
+3. Giỏ hàng có sản và k đủ stock mua thêm DONE (TRÙNG)
+4. Giỏ hàng có sản và k đủ stock mua thêm  ở ngày khác DONE (TRÙNG)
+4. giỏ hàng có sẳn và hết vé TRÙNG GIỮ VÉ
+5. giỏ hàng có sẳn và mua thêm mã giá khác cùng SP ( đủ và k đủ stock) DONE
+5.1 giỏ hàng có sẳn và mua thêm mã giá khác - khác SP ( đủ và k đủ stock) DONE
+5.2 giỏ hàng có sẳn và mua thêm mã giá khác cùng SP ở ngày khác ( đủ và k đủ stock) TRÙNG
+6. Giỏ hàng có sản và mua thêm chung mã giá nhưng đủ DONE
+6.1 Giỏ hàng có sản và mua thêm chung mã giá nhưng k đủ DONE
+6.3 giỏ hàng có sản và mua thêm chung mã giá ở ngày khác ( đủ và k đủ stock) DONE
+6. 2 SP KHÁC MÃ GIÁ ( ĐINH NGÀY + K ĐỊNH NGÀY) DONE
+
+7. 2 ng thanh toán cùng lúc DONE
+8. 
+9. stock ở ngày quá khứ TRÙNG
+10. tỉ lệ vượt quá stock TRÙNG
+11. đã hết hạn TRÙNG
+
+13. STOCK k đủ so với tỉ lệ   DONE
+15. Stock k đủ so với min    HẾT VÉ
+16. Stock k đủ với bội số    HẾT VÉ
+17. Stock không đủ với chỗ ngồi    K CÓ
+18. Stock k đủ với ngày khác    DONE
+19. Stock k đủ vì admin thay đổi  ( chỉ có ở định ngày)
+20. 
+21. Admin thay đổi bội số DONE
+22. Admin thay đổi min DONE
+23. Admin thay đổi tỉ lệ DONE
+24. Admin thay đổi chỗ ngồi DONE
+25. Add stock ở nhiều ngày trong 1 đơn hàng DONE  (TRÙNG)
+26. Mua hết stock ở 1 ngày, sau đó mua thêm hết stock ở 1 ngày khác ( k định ngày) TRÙNG
+
+
+27. NHIỀU SẢN PHẨM. -> Test them vai case
+28. Mua sp có định ngyaf và k định ngày chung DONE (TRÙNG)
+29. Mua nhíu sp còn. Nhưng có 1 sp ng khác mua trước
+30. MIX: ADD GIỎ HÀNG + GIỮ KHO + MUA 2 SP CÙNG LÚC + 2 NGÀY + ĐỊNH NGÀY + K ĐỊNH NGÀY + 
+
+- còn stock ( mã giá có 1 NCCSP), còn chỗ ngồi, còn vé, còn min/max DONE
+- còn stock ( mã giá có 3 NCCSP), còn chỗ ngồi, còn vé, còn min/max DONE
+- còn stock ( 2 đối tượng vé, 2 mã giá còn stock), còn chỗ ngồi, còn vé, còn min/max. DONE
+- còn stock ( 1 đối tượng vé với 1 mã giá còn stock và 1 đối tượng vé với 1 mã giá hết stock), còn chỗ ngồi, còn vé, còn min/max HẾT VÉ
+- còn stock, hết chỗ ngồi, còn vé, còn min/max DONE
+- còn stock, còn chỗ ngồi, hết vé, còn min/max K THOẢ
+- còn stock, còn chỗ ngồi, còn vé, không đủ min/max CHƯA
+- hết stock, còn chỗ ngồi, còn vé, còn min/max HẾT VÉ
+- hết stock ( mã giá có 1 NCCSP Có stock, 1 NCCSP không Có stock), còn chỗ ngồi, còn vé, còn min/max HẾT VÉ
+- không đủ stock, còn chỗ ngồi, còn vé, còn min/max DONE
+- 1 mã giá còn stock cho , còn chỗ ngồi, còn vé, còn min/max DONE
+
+
+-----
+XUẤT BÁN:
+
+- 
+
+//.so.0.1/oi.0.1.false.//

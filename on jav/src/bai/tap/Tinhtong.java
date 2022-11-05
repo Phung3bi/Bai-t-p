@@ -2,7 +2,7 @@
 package bai.tap;
 
 import java.util.Scanner;
-//Viết chương trình cho phép nhập vào n, sau đó nhập vào n phần tử số nguyên.
+//Viết chương trình cho phép nhập vào n, sau đó nhập vào n phần tử số nguyên. gfyygf
 // Cuối cùng, chương trình sẽ xuất ra giá trị trung bình của mảng này.
 public class Tinhtong {
         public static void main (String[] args){
